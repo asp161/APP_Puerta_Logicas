@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonfopuertaslogicas"
+
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/Vistaparaposicionar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"></TextView>
+
+    <TextView
+        android:id="@+id/Vistaparaposicionar2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/Vistaparaposicionar"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/and"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/Vistaparaposicionar"
+        android:layout_toRightOf="@id/Vistaparaposicionar2"
+        android:onClick="Clickand"
+        android:src="@drawable/and"
+
+        />
+
+    <ImageButton
+        android:id="@+id/or"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/Vistaparaposicionar"
+        android:layout_toLeftOf="@id/Vistaparaposicionar2"
+        android:scaleType="center"
+        android:src="@drawable/or"
+        android:onClick="Clickor"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/xor"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Vistaparaposicionar"
+        android:layout_toLeftOf="@id/Vistaparaposicionar2"
+        android:onClick="Clickxor"
+        android:scaleType="center"
+        android:src="@drawable/xor" />
+
+    <ImageButton
+        android:id="@+id/not"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Vistaparaposicionar"
+        android:layout_toRightOf="@id/Vistaparaposicionar2"
+        android:onClick="Clicknot"
+        android:src="@drawable/not"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xor"
+        android:layout_centerInParent="true"
+        android:padding="50dp"
+        android:text="PUERTAS LOGICAS"
+        android:textColor="#34DE15"
+        android:textSize="31dp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>
